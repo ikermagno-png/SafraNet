@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaizChain | Rastreabilidade Garantida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a1f 0%, #2d5a27 100%); }
+        .timeline-line { width: 2px; height: 100%; background: #e2e8f0; position: absolute; left: 15px; top: 0; z-index: 1; }
+        .timeline-dot { width: 32px; height: 32px; background: #2d5a27; border: 4px solid #fff; border-radius: 50%; position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; }
+        .success-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white p-6 rounded-b-3xl shadow-lg">
+        <div class="flex justify-between items-center mb-6">
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C10 14.5 10.5 19 12 21"/></svg>
+                <span class="font-bold text-xl tracking-tight">RaizChain</span>
+            </div>
+            <div class="bg-green-500/20 px-3 py-1 rounded-full text-xs font-semibold border border-green-500/30 flex items-center gap-1">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
+                AUTÊNTICO
+            </div>
+        </div>
+
+        <div class="text-center pb-2">
+            <h1 class="text-2xl font-bold mb-1">Corte Premium: Picanha</h1>
+            <p class="text-green-200 text-sm opacity-80">Lote: #RZ-2026-MT042</p>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-4 -mt-6">
+        
+        <!-- Status Card -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 mb-6 flex items-center justify-between">
+            <div>
+                <p class="text-slate-500 text-xs uppercase font-bold tracking-wider">Status de Conformidade</p>
+                <h2 class="text-green-700 font-bold text-lg">Aprovado pela EUDR</h2>
+            </div>
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+        </div>
+
+        <!-- Product Image Placeholder -->
+        <div class="bg-slate-200 w-full h-48 rounded-2xl mb-8 overflow-hidden relative shadow-inner flex items-center justify-center">
+            <img src="picanha.pngauto=format&fit=crop&q=80&w=800" alt="Carne Premium" class="object-cover w-full h-full opacity-90">
+            <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg shadow-sm">
+                <p class="text-xs font-bold text-slate-800">Origem: Sorriso, Mato Grosso</p>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <h3 class="text-slate-800 font-bold mb-6 flex items-center gap-2 px-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Jornada da Terra à Mesa
+        </h3>
+
+        <div class="space-y-8 relative">
+            <div class="timeline-line"></div>
+
+            <!-- Step 1 -->
+            <div class="flex gap-4 relative">
+                <div class="timeline-dot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <span class="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full mb-1 inline-block">15 MAI 2025</span>
+                    <h4 class="font-bold text-slate-800 text-sm">Origem Verificada</h4>
+                    <p class="text-slate-500 text-xs mt-1">Fazenda Sol Nascente, Sorriso - MT. Proprietário: João Silva. Área certificada livre de desmatamento.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex gap-4 relative">
+                <div class="timeline-dot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M20 12h2"/><path d="M2 12h2"/></svg>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <span class="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full mb-1 inline-block">JAN - OUT 2025</span>
+                    <h4 class="font-bold text-slate-800 text-sm">Manejo Sustentável</h4>
+                    <p class="text-slate-500 text-xs mt-1">Pastagem rotacionada e nutrição balanceada. Registro SISBOV: 129384-MT.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex gap-4 relative">
+                <div class="timeline-dot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l4-2 6.7 3.3L18 7l4 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M18 17h.01"/><path d="M14 17h.01"/><path d="M10 17h.01"/><path d="M6 17h.01"/></svg>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <span class="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full mb-1 inline-block">10 NOV 2025</span>
+                    <h4 class="font-bold text-slate-800 text-sm">Processamento</h4>
+                    <p class="text-slate-500 text-xs mt-1">Frigorífico Modelo, Rondonópolis - MT. Certificação SIF nº 1234. Inspeção sanitária aprovada.</p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex gap-4 relative">
+                <div class="timeline-dot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div class="flex-1 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <span class="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full mb-1 inline-block">14 NOV 2025</span>
+                    <h4 class="font-bold text-slate-800 text-sm">Distribuição Final</h4>
+                    <p class="text-slate-500 text-xs mt-1">Cadeia fria monitorada até o Supermercado Premium. Temperatura média: 2°C.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blockchain Verification Info -->
+        <div class="mt-12 bg-slate-900 text-white p-6 rounded-2xl shadow-xl relative overflow-hidden">
+            <div class="absolute -right-4 -top-4 opacity-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4 class="font-bold flex items-center gap-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                Certificação Blockchain
+            </h4>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">Informações imutáveis registradas em tempo real. A RaizChain garante que os dados acima não foram alterados desde a origem.</p>
+            
+            <div class="space-y-3">
+                <div class="bg-slate-800 p-3 rounded-lg flex justify-between items-center border border-slate-700">
+                    <span class="text-[10px] text-slate-500 font-mono">TX_HASH</span>
+                    <span class="text-[10px] text-green-400 font-mono">0x8a9b...c2f4</span>
+                </div>
+                <div class="bg-slate-800 p-3 rounded-lg flex justify-between items-center border border-slate-700">
+                    <span class="text-[10px] text-slate-500 font-mono">PROTOCOL</span>
+                    <span class="text-[10px] text-green-400 font-mono">ERC-721 AgriProof</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Actions -->
+        <div class="mt-8 space-y-3">
+            <button class="w-full bg-white border border-slate-200 text-slate-800 font-bold py-4 rounded-xl shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Certificado Digital
+            </button>
+            <button class="w-full bg-white border border-slate-200 text-slate-800 font-bold py-4 rounded-xl shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Ver Mapa de Origem Satélite
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-slate-400 pb-10">
+        <p class="text-xs uppercase tracking-widest font-bold mb-2">Plataforma RaizChain</p>
+        <p class="text-[10px]">Safranet Todos os direitos reservados 2026R</p>
+    </footer>
+</body>
+</html>
